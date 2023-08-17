@@ -51,7 +51,6 @@ public class PlayerMove : MonoBehaviour
         dir.y = yVelocity;
 
         yVelocity = yVelocity + gravity * Time.deltaTime;
-        print(yVelocity);
         //transform.position += dir * speed * Time.deltaTime;
 
         characterController.Move(dir * speed * Time.deltaTime);
